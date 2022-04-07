@@ -1,0 +1,75 @@
+/* responsivo para mobile
+    estudar:
+    - tecnicas de mobile first
+    - responsiview
+    - media query 
+
+ * é importante ao estilizar com o media query precisamos colocar o estilo que serao sobrescritos no elemento exatamente com o mesmo seletor*/
+
+@media (max-width: 750px) { /* Ele é usado para aplicar estilos especificos de css para diferentes tamanhos especificos de tela, por exemplo:
+  - "quando o tamanho da tela chegar no tamanho x, vou aplicar algum estilo ou propriedade para que minha pagina se adapte as mudanças de dispositivos"*/
+    body{
+        font-size: 12px;
+    }
+
+    .pokedex {
+        flex-direction: column; /* coloca os elementos numa especie de coluna, fazendo a listagem do lado ir pra baixo pois no celular é tudo compacto, dificulta a leitura*/
+        gap: 30px;
+        padding: 30px 0;
+    }
+
+    .cartao-pokemon {
+        max-width: 300px; /*diminui largura do cartao*/
+    }
+
+    .cartao-pokemon .cartao-imagem {
+        width: 200px;  /* largura da imagem do cartao */
+        height: 200px; /* altura da imagem do cartao */
+    }
+
+    .cartao-pokemon .cartao-informacoes {
+        padding: 60px 30px 30px;
+        margin-top: -50px;
+    }
+
+    .cartao-pokemon .cartao-informacoes .informacoes {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .cartao-pokemon .cartao-informacoes h3 {
+        font-size: 16px;
+    }
+
+    .cartao-pokemon .cartao-informacoes .habilidades ul li, .cartao-pokemon .cartao-informacoes .status ul li {
+        font-size: 12px;
+    }
+
+    .listagem {
+        max-width: 300px;        
+    }
+
+    .listagem ul {
+        display: inline-block; /* força os elementos a ficar do lado um do outro */
+        gap: 8px; /*espaçamento entre os elementos*/
+        flex-wrap: wrap; /*quebra linha, quando os elementos um do lado do outro ultrapassam o tamanho de tela, os elementos quebram para a linha de baixo. */
+    }
+
+    .listagem .pokemon {
+        width: 145px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-bottom: 5px;
+        margin-inline-start: 3px;
+        border-radius: 8px;
+    }
+}
+
+/* Dicas:
+    - f12 para inspecionar o codigo
+    - usar dev tools na internet
+    - extensão responsive viewer
+    - inspecionar cada codigo para descobrir como sao feitos 
+    - site: front-end mentor 
+    - usar s css (sas) dps de aprender css puro. */

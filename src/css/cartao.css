@@ -1,0 +1,97 @@
+.cartao-pokemon {
+    display:none; /* esconde cartoes que nao tem classe 'aberto' */
+    background-color: bisque;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; /* coloca sombra nas coisas, posso usar o site 'getcssscan' */
+    border-radius: 10px;  /* arredonda todas as bordas */
+}
+
+.cartao-pokemon .cartao-topo { /* hierarquia: localizando um classe dentro de outra classe*/
+    padding: 30px 40px 0; 
+}
+
+
+.cartao-pokemon .nome {
+    margin-bottom: 5px;
+
+}
+
+.cartao-pokemon .tipo { 
+    font-size: 12px; 
+    background-color: white; 
+    opacity: 0.7;
+    border-radius: 10px;
+    padding: 2px 10px; 
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; /*sombra no span - efeito 3D*/
+}
+
+.cartao-pokemon .detalhes {
+    color: white; 
+    display: flex; /* coloca o filho '#001' do lado do pai 'pokemon' no titulo*/
+    justify-content: space-between; /*espaço entre os elementos de uma classe, no caso, houve um espaço entre os elementos da div detalhes*/
+    align-items: center; /*alinha verticalmentec os elementos dentro de detalhes */
+}
+
+.cartao-pokemon .cartao-imagem { 
+    width: 350px; 
+    height: 350px;
+}
+
+.cartao-pokemon img { 
+    max-height: 100%;
+}
+
+.cartao-pokemon .cartao-informacoes {
+    background-color: white; 
+    display: flex; /*deixa as duas divs (status e habilidades) uma do lado da outra.*/
+    justify-content: space-between;
+    padding: 80px 30px 50px;
+    margin-top: -70px; /* margem do topo 70px negativos, o elemento sobe 70px para cima */
+    border-bottom-left-radius: 8px; /* a borda debaixo da esquerda, esta arredondada 8px */
+    border-bottom-right-radius: 8px; /* a borda debaixo da direita, esta arredondada 8px */
+}
+
+.cartao-pokemon .cartao-informacoes h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #6B727A;
+}
+
+.cartao-pokemon .cartao-informacoes .status, .cartao-pokemon .cartao-informacoes .habilidades  {  /* a virgula quer dizer para  estilizar duas classes (status e habilidades) em um css só, isso ajuda a economizar codigo*/
+    padding: 0 10px;
+    width: 180px;
+}
+
+.cartao-pokemon .cartao-informacoes .habilidades ul li, .cartao-pokemon .cartao-informacoes .status ul li { /*estilizando a lista e os itens de 2 classes de divs (habilidades e status)*/
+    border-bottom: 1px solid #c3c4c5;
+    padding: 0 0 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.cartao-pokemon.aberto { /*nomes grudados pois sao duas classes no mesmo elemento*/
+    display: block; /* quando for uma classe aberta, ela vai aparecer na tela, sobrescreve o 'display: none;'*/
+}
+
+.tipo-eletrico { 
+    background-color: #fcc719; 
+}
+
+.tipo-planta {
+    background-color: #49d0b0;
+}
+
+.tipo-fogo {
+    background-color: #ed8a8b;
+}
+
+.tipo-sombrio {
+    background-color: #ba68c8;
+}
+
+.tipo-agua {
+    background-color: #76befe;
+}
+
+.tipo-dragao {
+    background-color: #c29791;
+}

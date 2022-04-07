@@ -1,0 +1,24 @@
+/* CSS significa Cascading Style Sheets ou Folhas de Estilo em Cascata;
+    É usada para estilizar um arquivo html*/
+/* CTRL + ; comenta uma linha */
+
+body {
+    font-family: 'Poppins', sans-serif; /*google fonts para baixar fontes*/
+}
+
+main {
+    min-height: 100vh; /*Altura minima: 100 (view height) - mostrar 100% da tela do usuario
+    usar 'px' é forçar uma medida absoluta, usar 'vh' que é um tipo de medida responsiva que se adequa ao conteudo, são mais relativas.*/
+    background-color: #dadfe8;
+    display: flex;   /*toda a area do css se torna mais flexivel, possibilitando uma melhor mobilidade dos elementos da pagina.*/
+    align-items: center;   /* coloca items dentro do main no centro; usa-se junto com o display; alinhamento vertical*/
+    justify-content: center;   /*coloca items dentro do main no centro; usa-se junto com o display; alinhamento horizontal*/
+}
+
+.pokedex { /*estilizando classe pokedex*/
+    display: flex;   /* é o atributo que faz com que os cartoes fiquem do lado da listagem de pokemons, pois vai colocar os objetos em linha sem gambiarras.*/
+    gap: 30px;   /*espaçamento entre elementos*/
+    padding: 30px 0;   /*espaçamento das 4 bordas, por isso possui dois atributos, o 1° atributo é o espaçamento vertical(cabeçalho e rodapé), e o 2° atributo é o espaçamento horizontal(direita e esqueda)
+    - 'margin' espaçamento externo dos elementos;
+    - 'padding' espaçamento interno dos elementos;*/
+}

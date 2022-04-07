@@ -1,0 +1,38 @@
+/* Listagem do navbar */
+
+.listagem {
+    max-width: 200px;
+}
+
+.listagem .pokemon {   /* classe de div 'pokemon' dentro de div 'listagem' */
+    display: flex; /* coloca escrito do lado da imagem */
+    align-items: center; /* alinha texto verticalmente */
+    justify-content: space-around; /* espaço em volta dos elementos */
+    margin-bottom: 10px; /*espaço entre os itens horizontalmente*/
+    background-color: #6b727a;
+    color: #ffffff;
+    padding: 0 5px;
+    cursor: pointer; /* cursor de maozinha, aparece quando algum elemento possui algum link, ou seja, indica algo executavel*/
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    min-height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; /* sombra, site 'getcssscan'*/
+    transition: 0.15s ease-in-out; /*tempo de transição e o tipo de transição, 'ease-in-out' é uma das mais utilizadas*/
+}
+
+.listagem .pokemon:hover { /* os ':' quer dizer que quero criar uma pseudoclasse, ou seja, estilizar a animacao de um elemento no momento que o cursor passa em cima dele */
+    transform: scale(1.05);
+}
+
+.listagem .pokemon img {
+    width: 25%; /*tamanho da imagem dentro da div pokemon*/
+    border-radius: 50%;
+} 
+
+.listagem .pokemon span {
+    padding-right: 10px;
+}
+
+.listagem .pokemon.ativo {
+    background-color: #fa6668;
+}

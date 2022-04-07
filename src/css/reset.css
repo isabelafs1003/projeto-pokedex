@@ -1,0 +1,12 @@
+/* Arquivo criado para tirar estilos automaticos manualmente do google que nao queremos na nossa pagina
+   - RESET DA PAGINA*/
+
+* {  /* tira todos os estilos que eu quiser para TODOS OS ELEMENTOS*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   /* todo padding e toda margem vao ficar contidos na largura e na altura do 'box-sizing'*/
+}
+
+ul { 
+    list-style-type: none; /*tira marcações de listagem*/
+}
